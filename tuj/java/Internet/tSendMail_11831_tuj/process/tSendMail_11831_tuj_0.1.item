@@ -76,7 +76,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Studio Builds/7.2/Talend-Studio-20190122_1936-V7.2.1SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Studio Builds/7.2/Talend-Studio-20190123_1937-V7.2.1SNAPSHOT/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -115,27 +115,27 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_ceyqIB7_EemqNYHZiyi1DQ" name="DQTechnical"/>
-    <routinesParameter id="_caZ5YB7_EemqNYHZiyi1DQ" name="DataMasking"/>
-    <routinesParameter id="_cfEW8B7_EemqNYHZiyi1DQ" name="DataOperation"/>
-    <routinesParameter id="_cefvMB7_EemqNYHZiyi1DQ" name="DataQualityDependencies"/>
-    <routinesParameter id="_ceV-MB7_EemqNYHZiyi1DQ" name="DataQuality"/>
-    <routinesParameter id="_ceqHQB7_EemqNYHZiyi1DQ" name="DqStringHandling"/>
-    <routinesParameter id="_ce7NAB7_EemqNYHZiyi1DQ" name="MDM"/>
-    <routinesParameter id="_cfLrsB7_EemqNYHZiyi1DQ" name="Mathematical"/>
-    <routinesParameter id="_cfTAcB7_EemqNYHZiyi1DQ" name="Numeric"/>
-    <routinesParameter id="_cfaVMB7_EemqNYHZiyi1DQ" name="Relational"/>
-    <routinesParameter id="_cgFqoB7_EemqNYHZiyi1DQ" name="SQLike"/>
-    <routinesParameter id="_cfhp8B7_EemqNYHZiyi1DQ" name="StringHandling"/>
-    <routinesParameter id="_cfo-sB7_EemqNYHZiyi1DQ" name="TalendDataGenerator"/>
-    <routinesParameter id="_cfvsYB7_EemqNYHZiyi1DQ" name="TalendDate"/>
-    <routinesParameter id="_cf9u0B7_EemqNYHZiyi1DQ" name="TalendStringUtil"/>
-    <routinesParameter id="_cf3BIB7_EemqNYHZiyi1DQ" name="TalendString"/>
+    <routinesParameter id="_9-q_UCLmEemeZ7LCegCCrg" name="DQTechnical"/>
+    <routinesParameter id="_95j10CLmEemeZ7LCegCCrg" name="DataMasking"/>
+    <routinesParameter id="_9_BkoCLmEemeZ7LCegCCrg" name="DataOperation"/>
+    <routinesParameter id="_9-VBECLmEemeZ7LCegCCrg" name="DataQualityDependencies"/>
+    <routinesParameter id="_9-Iz0CLmEemeZ7LCegCCrg" name="DataQuality"/>
+    <routinesParameter id="_9-gAMCLmEemeZ7LCegCCrg" name="DqStringHandling"/>
+    <routinesParameter id="_9-2lgCLmEemeZ7LCegCCrg" name="MDM"/>
+    <routinesParameter id="_9_LVoCLmEemeZ7LCegCCrg" name="Mathematical"/>
+    <routinesParameter id="_9_VtsCLmEemeZ7LCegCCrg" name="Numeric"/>
+    <routinesParameter id="_9_fesCLmEemeZ7LCegCCrg" name="Relational"/>
+    <routinesParameter id="_-Ab54CLmEemeZ7LCegCCrg" name="SQLike"/>
+    <routinesParameter id="_9_rE4CLmEemeZ7LCegCCrg" name="StringHandling"/>
+    <routinesParameter id="_9_014CLmEemeZ7LCegCCrg" name="TalendDataGenerator"/>
+    <routinesParameter id="_9__N8CLmEemeZ7LCegCCrg" name="TalendDate"/>
+    <routinesParameter id="_-ASv8CLmEemeZ7LCegCCrg" name="TalendStringUtil"/>
+    <routinesParameter id="_-AI-8CLmEemeZ7LCegCCrg" name="TalendString"/>
   </parameters>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;ttalend@yahoo.com&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;ttalend@yahoo.com&quot;"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;testtalend@hotmail.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;testtalend@hotmail.com&quot;"/>
     <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
     <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
     <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
@@ -148,14 +148,14 @@
       <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT"/>
     </elementParameter>
     <elementParameter field="TABLE" name="HEADERS"/>
-    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.mail.yahoo.com&quot;"/>
-    <elementParameter field="TEXT" name="SMTP_PORT" value="465"/>
-    <elementParameter field="CHECK" name="SSL" value="true"/>
-    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.office365.com&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="587"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="true"/>
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;ttalend@yahoo.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="YF1zLwChqRvsuVpVymc7XA=="/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;testtalend@hotmail.com&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="YF1zLwChqRu9ToW5H1JkCqG9CGa/p0yv"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
@@ -167,18 +167,18 @@
   </node>
   <node componentName="tPOP" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;pop.mail.yahoo.com&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;outlook.office365.com&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="995"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;ttalend@yahoo.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="YF1zLwChqRvsuVpVymc7XA=="/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;testtalend@hotmail.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="YF1zLwChqRu9ToW5H1JkCqG9CGa/p0yv"/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="context.data_output_dir"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="jobName + &quot;_out.mail&quot;"/>
-    <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
-    <elementParameter field="CHECK" name="NEWER_EMAILS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="MAX_EMAILS" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ALL_EMAILS" value="false"/>
+    <elementParameter field="CHECK" name="NEWER_EMAILS" value="false"/>
+    <elementParameter field="TEXT" name="MAX_EMAILS" value="1"/>
     <elementParameter field="CHECK" name="DELETE_FROM_SERVER" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="imap"/>
-    <elementParameter field="CHECK" name="SPECIFY_MAIL_FOLDER" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="pop3"/>
+    <elementParameter field="CHECK" name="SPECIFY_MAIL_FOLDER" show="false" value="false"/>
     <elementParameter field="TEXT" name="MAIL_FOLDER" show="false" value="&quot;INBOX&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="true"/>
     <elementParameter field="TABLE" name="ADVANCED_FILTER"/>
@@ -223,16 +223,16 @@
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -426,15 +426,15 @@
     <elementParameter field="TEXT" name="LABEL" value="output to mysql"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMysqlOutput_1">
-      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="5" name="language" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="10" name="status" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="substatus" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="description" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="5" name="language" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="10" name="status" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="substatus" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="description" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
@@ -573,13 +573,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c62c4bf1-3d3a-4e1f-be58-a5f64247933f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5s8V57lKpbRaXAEGRd+pUt3A0EVI4/A1vuQ5ApLBCXRW6TuGLOgo/BN1N3AVt3WacF5j2BP+dnGG
-SDxswsUbUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74d3b193-10c3-4398-9331-570c3f4758c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CpaT7ll8yxw3IU24W7O/M4E3wY/ZSXcXnj6sytB3m8v9uE9gfP1WpvHmAdL8SaFvZzi9sXtFpIcx
-iPQru71P5w==</DigestValue></Reference></SignedInfo><SignatureValue>rCjEQTRBj+1Y8XErbqvKTyN3ZY2I/aFaRI0KxYx/6p8xcvm8+ymfPahV9IyvAnYinDOCq1p0pgqW
-aGW4IlvFKsPNgDVAdE8PVL8OKTj6WCBF5UB/mTP1hmKTYoTvtXQM7LI1sf/OGMTw+DlmDNEqFZFU
-EFReR7FiL/YvY13netj6FyPWT3k6Ku0iMWhaYLG+MFfYkqkPIuoWhesEZpWELpbnu+UVTeAnvEFQ
-9fisaTLRWrd88ehmZ3SiLze0UwUeAIxBfbMmMSqE06FEBm+ffJNGJ1Aq/heUo6iHo2+28EklT8td
-8Gnp/JLEDgZFMOweguST79Db9aZLNtWEiud4xg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c33b47f3-b1b2-4a07-98bd-dac701d2cf50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ECPzbulp9+u6qo4KwuEEuE/SOsHW3gjXl2iMDdHon91X1X+0XQa0Mdbxn7rD5O0oz/3m2oN2HAHN
+ohHZ7Rlh+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e3eb7f5-1f6d-4c7e-9aab-a7f6a91276cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cEUxEuIbUkxmpsPPIIxAXog5vLOSP6aibV/y90pMigjhsMnFmqJCYsTyPmk1Jg3ejgXbPHmmKmFd
+JCRVvRf5tg==</DigestValue></Reference></SignedInfo><SignatureValue>vDmb2hY4EZvFiTw+l24XiJtrhkmnd8HtDEbGZDgi5WxNZ+a7LwgZUewy3A/TC/FC9vlGOxfSJ6PC
+YiZ1iXbwf06NOmSrRoXifRvMEcmWb90Sj8T7NRdhg2IgZ3ycMPM+Gjnnbb5tSTBjzH0QQaRZt0LG
+sAB9ppXqp2Jjc4DeYAl5PS5w9id/573Z6U+9AGpIif07rWG+JusdrjrJs5Dn3AfyQMsY9AsfS+zK
+JuC73NgytP0qWegD+pE9WX2puTSJndhwziLr5maugGZttCdmRlGnrZgcCqbLMyI8W/pKJ9/g9ypt
+Tud62YtNqNC8gYheOacfcP2v6tAQmwbrUgqsww==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -603,4 +603,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74d3b193-10c3-4398-9331-570c3f4758c0" Target="#_c62c4bf1-3d3a-4e1f-be58-a5f64247933f"><Timestamp>2019-01-25 15:32:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e3eb7f5-1f6d-4c7e-9aab-a7f6a91276cb" Target="#_c33b47f3-b1b2-4a07-98bd-dac701d2cf50"><Timestamp>2019-01-28 15:47:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

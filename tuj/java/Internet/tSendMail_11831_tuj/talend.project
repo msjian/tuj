@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_XiaPsR7_EemqNYHZiyi1DQ" label="Local_Project" description="" language="java" technicalLabel="LOCAL_PROJECT" local="true" author="_XigWUB7_EemqNYHZiyi1DQ" productVersion="Talend Data Fabric-7.2.1.20190122_1936-SNAPSHOT" itemsRelationVersion="1.3">
-    <migrationTask xmi:id="_YEea8B7_EemqNYHZiyi1DQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  <TalendProperties:Project xmi:id="_4mxtkCLmEemeZ7LCegCCrg" label="Local_Project" description="" language="java" technicalLabel="LOCAL_PROJECT" local="true" author="_4m63gCLmEemeZ7LCegCCrg" productVersion="Talend Data Fabric-7.2.1.20190123_1937-SNAPSHOT" itemsRelationVersion="1.3">
+    <migrationTask xmi:id="_5L6a8CLmEemeZ7LCegCCrg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_XigWUB7_EemqNYHZiyi1DQ" login="user@talend.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
+  <TalendProperties:User xmi:id="_4m63gCLmEemeZ7LCegCCrg" login="user@talend.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
 </xmi:XMI>
