@@ -71,7 +71,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190716_1952-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190909_2019-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -290,6 +290,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_BUCKET&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -339,6 +340,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -891,24 +893,12 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="CHECK" name="configuration.useN1QLQuery" value="true"/>
-    <elementParameter field="TEXT_AREA" name="configuration.query" value="&quot;DELETE FROM  `TDI40639_Couchbase_N1QL_01_bucket`  WHERE name like 'TDI40639_Couchbase_N1QL_02_case_sensitive%' ;&quot;"/>
+    <elementParameter field="TEXT_AREA" name="configuration.query" value="&quot;DELETE FROM  `TDI40639_Couchbase_N1QL_01_bucket`  WHERE meta().id like 'TDI40639_Couchbase_N1QL_02%' ;&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TEXT" name="configuration.limit" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
-    <metadata connector="FLOW" name="CouchbaseInput_5">
-      <column comment="" key="false" length="-1" name="_Date2" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss zzz&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Date3" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Int" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_byte" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_byte[]" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Double" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Byte2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Character" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_BigDecimal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Object" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="CouchbaseInput_5"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
@@ -926,46 +916,11 @@
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Date2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Date3"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Int"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_byte"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Double"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Byte2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Character"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_BigDecimal"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Object"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_Long"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_6">
-      <column comment="" key="false" length="-1" name="_Date2" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss zzz&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Date3" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Int" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_byte" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_byte[]" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Double" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Byte2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Character" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_BigDecimal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Object" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="_Long" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tLogRow_6"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -1239,8 +1194,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
   </connection>
   <note opaque="true" posX="192" posY="-320" sizeHeight="64" sizeWidth="481" text="Couchbase bucket and column is case sensitive."/>
-  <note opaque="true" posX="672" posY="384" sizeHeight="64" sizeWidth="481" text="column case sensitive --&gt; &quot;EMAIL_TDI40639_Couchbase_N1QL_02_case_sensitive&quot;"/>
-  <note opaque="true" posX="480" posY="128" sizeHeight="64" sizeWidth="609" text="bucket case sensitive --&gt; &quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
+  <note opaque="true" posX="672" posY="384" sizeHeight="64" sizeWidth="641" text="column case sensitive --&gt; &quot;EMAIL_TDI40639_Couchbase_N1QL_02_case_sensitive&quot;"/>
+  <note opaque="true" posX="480" posY="128" sizeHeight="64" sizeWidth="609" text="bucket case sensitive --&gt; &quot;TDI40639_Couchbase_N1QL_01_BUCKET&quot;"/>
+  <note opaque="true" posX="672" posY="-32" sizeHeight="64" sizeWidth="353" text="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
+  <note opaque="true" posX="672" posY="-192" sizeHeight="64" sizeWidth="353" text="&quot;TDI40639_Couchbase_N1QL_01_BUCKET&quot;"/>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -1323,13 +1280,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_935b9595-3e02-4fb0-aaaf-3258f148234c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PxBmqdy3JXeFK690aEUa6y/eu34f89Yb6Jn6CtowSaQzmIu76xcUe9HVABVqmAW3aD+f9J+imki4
-21Kzz9M1wg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b8ff1de0-f0ca-4ce5-8976-b131a7c5705f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rjSL7zBuwR2vNlWj0nI2rXbJu/Ce4H7qoxpHT3PSyLlEWOcMYfxX2JTVNsFEs+IgqJJ73wdTwOMZ
-52m5UpbS0g==</DigestValue></Reference></SignedInfo><SignatureValue>csBV6Vwe00WyxBe8Fa6CjtIXqN6TwszDFdpw4sLCrz4Li2fWrNOd3g+J2yPIzvFIg7G/fBcWa7cK
-2g6fLmwZHYo59Qza0bIJhx5fTPJWUNZLngxNX+xW5/CtrGs2Mvg1As04rO80RirBaZ4GzZSohTST
-hjp7YpU0wl/+/cRD/yx3cm+HOIYgjLHyuXJM0QiZ2HpmI7GIgqe1b8ROurQY3Nb7SiBiQHfqBxqR
-1Q+PI8q4mHsJURL/mExqJNlCvtmJnMGo8ApbidYIrKYNBADFd8grAih8J4L5N/72YLNAyExLb5FD
-Ze0IUerfrfZjpugJBuY8QFfI16852Umu6FtPmA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9193c946-c2ad-4f8d-a9d1-12f50c41eb0a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TioNN2IG+/1zKnrCOTe9+o+B0uqDeKtpRlYSAi3/JcacDtUMD2NoOnvggJsPbThlug2GN1EG1YcT
+yxY1mpoqUQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b43a87d0-004a-4fc4-b763-1730ff0d153f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XZZ760xIqk4UMghTBji2KHsSXhCPpWgIQC77IliKTo6Bx36XcCcCDAyj+LNur5wQF9QTFu4KKUn3
+ReHJBdZ2Mg==</DigestValue></Reference></SignedInfo><SignatureValue>FRkZFFdndCyGdW/tveF+5tL1MagMVQ80T5TPrEvOIse7PhZyfy7huuyo4rTPE46szFNRj6T1VIhP
+NeGDl66nzzVMBzPmv8Dos1VAYIiSa8txtDTG8JcXilAnf949ixeSfNjSzx0GOFcEYg2Rdh4UKye+
+iSFiWHkTY39MBehov5XbBzlYIrSkbIXi94Gma6AoJLzXwPYojhR1XX5LajNUjJhzT60h8oYWRB0R
+P2gDdpMCOI+kM/2y/VIE3YN/v8uwOE/IR1/Q67HNCkovVqTY8b1heF6qCOFx9oyWVk9FgCiIdP7i
+THY/2bVeAa3eUR37FX1/EBl1ekkGzSA4I4UmlQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1351,4 +1308,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b8ff1de0-f0ca-4ce5-8976-b131a7c5705f" Target="#_935b9595-3e02-4fb0-aaaf-3258f148234c"><Timestamp>2019-07-19 01:53:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b43a87d0-004a-4fc4-b763-1730ff0d153f" Target="#_9193c946-c2ad-4f8d-a9d1-12f50c41eb0a"><Timestamp>2019-09-17 10:01:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

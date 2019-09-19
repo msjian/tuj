@@ -71,7 +71,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190708_1940-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190909_2019-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -344,7 +344,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_Ai7tAHh0EemDm6d9yAUQRQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_eDnn0NhoEemTpvDloJIi5g-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -408,6 +408,7 @@
     <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
     <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
     <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWriteJSONField_1">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -428,6 +429,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="60"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -479,6 +481,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -528,6 +531,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -577,6 +581,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -1156,16 +1161,12 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="&quot;TDI40639_Couchbase_N1QL_01_bucket&quot;"/>
     <elementParameter field="CHECK" name="configuration.useN1QLQuery" value="true"/>
-    <elementParameter field="TEXT_AREA" name="configuration.query" value="&quot;DELETE FROM  `TDI40639_Couchbase_N1QL_01_bucket`  WHERE name like 'TDI40639_Couchbase_N1QL_01-%' ;&quot;"/>
+    <elementParameter field="TEXT_AREA" name="configuration.query" value="&quot;DELETE FROM  `TDI40639_Couchbase_N1QL_01_bucket`  WHERE meta().id like 'TDI40639_Couchbase_N1QL_01%' ;&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TEXT" name="configuration.limit" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
-    <metadata connector="FLOW" name="CouchbaseInput_6">
-      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="interests" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="email" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="CouchbaseInput_6"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="REJECT" name="REJECT"/>
@@ -1183,22 +1184,11 @@
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="interests"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_8">
-      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="interests" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="email" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tLogRow_8"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -1630,13 +1620,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3fc0200e-33a1-4ecc-8660-9a8a76b86c14"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u4/+3v8JV7cgfzqiV7TY4PaOnhl3KskNRcrLIhB1hQq/zsVVz3ikfO27HhONBE4rckjpIXMBktcd
-E1AF+5jsaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fbc0f88d-a319-40a2-8727-f1c57e683908"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fdxvr8NHTf/SEbvuZt9VTbCN6J2V/92NZ0wmnoBwvOXt03X9Z5njwyasVpO8r9JNmKzbAM6bX5QU
-y8pyDDWtdQ==</DigestValue></Reference></SignedInfo><SignatureValue>fs3gMqIFetvyfrpn+W/KJPC6J5d7oy3N/SOGMO5U8yBxcTBgIraMQX+vym7AUWKwTFNVUL42CN12
-FimS62sFpdJaYh2/5vIGisRBlUfHLtnahKZcBxOw1pljmTN13vpi6hjPQ0AYoiJdBCl5kwx2bhlv
-t4fGfZWL+957V4OO3KRmMeXH8u5vI1VkgGhVN5x8UY+NL+rKdaooTJs8u9wmS8W09qfdR5kNoo3s
-WFoIvvOZHtsReXkPAkDq2zIHX/bnTpcLMLOSQPa8hyauoBXllSkmnSGkywo16P4/w6z40Ybm0GNL
-sG2CqWfrHSj7rnyZR3I7MA0dmGNap6cMI9jOcg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d3786451-f6c1-4182-b356-5b9d7ea7b6a6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MQiU+4VYMy3LWJOai9l02Gr2VPxuyWdQCmdKTeJiyib5w0kDf6QCSbyCoYvYFzkNeAblrpBzNqfB
+vKI29qR2Ag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0ab1000c-a633-4550-a4f7-90d02b728aea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HPTFDsMzxxPzu/wioLsD8ejkRTT3yeRqpANNJlp/a6oKPEeYmtkPdxyLFwEwwSxDx5Qd67ddj+pa
+nhMp5smpqg==</DigestValue></Reference></SignedInfo><SignatureValue>ClJ2Geh39iwl0PvWG7iUqnmflzfwU80OL4jl51mpcu1fl1K8EP6X6Qh6SKHQn6yy5ao5GfDXRfJj
+dlB8eSYK4w7ApmNmjzmLPub69kabt70jqQ0jSkcTy/w4gjk1e0fCr8zvJAsm4Yt+litVHgB+mmbQ
+TaGpkI/PXIIKDtpE+Zzz8HZbYba4+iXXDZVTmHc22htyRb04Yu0xJn9EFLMNoCZsjm9MNCHMo1a5
+fKD8dZtJykppQmAQ9oT7NgDG7qsmuS8SC0YHcWqNIFH4qYm22qzFb1BU4dkvzhvjRGgVuqKRvr4m
+iYAUgd7OTesaRDd6/AxZxyr+jv6dpq6aOwer8w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1658,4 +1648,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fbc0f88d-a319-40a2-8727-f1c57e683908" Target="#_3fc0200e-33a1-4ecc-8660-9a8a76b86c14"><Timestamp>2019-07-18 09:46:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0ab1000c-a633-4550-a4f7-90d02b728aea" Target="#_d3786451-f6c1-4182-b356-5b9d7ea7b6a6"><Timestamp>2019-09-17 09:51:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
