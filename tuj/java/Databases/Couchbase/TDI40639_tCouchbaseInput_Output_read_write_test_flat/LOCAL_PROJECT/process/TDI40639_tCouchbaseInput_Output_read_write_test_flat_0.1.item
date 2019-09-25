@@ -70,7 +70,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190918_1938-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/talend-tools/builds/Talend-Studio-20190923_1940-V7.3.1SNAPSHOT/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -669,6 +669,7 @@
     <elementParameter field="PASSWORD" name="configuration.dataSet.datastore.password" value="8pW6Nmy2kufuVrnHw6D/c3Yw9EqI6AEMmutzyXe24a8="/>
     <elementParameter field="TEXT" name="configuration.dataSet.bucket" value="context.couchbase_bucket"/>
     <elementParameter field="TEXT" name="configuration.idFieldName" value="id"/>
+    <elementParameter field="CHECK" name="configuration.partialUpdate" value="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.datastore.connectTimeout" value="20"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.datastore.__version" show="false" value="1"/>
@@ -799,8 +800,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Cluster cluster = CouchbaseCluster.create(context.couchbase_node);&#10;cluster.authenticate(context.couchbase_username, context.couchbase_password);&#10;ClusterManager clusterManager = cluster.clusterManager(context.couchbase_username, context.couchbase_password);&#10;BucketSettings bucketSettings = new DefaultBucketSettings.Builder()&#10;        .type(BucketType.COUCHBASE)&#10;        .name(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;)&#10;        .password(context.couchbase_password)&#10;        .quota(120) // megabytes 兆字节&#10;        .replicas(1)&#10;        .indexReplicas(true)&#10;        .enableFlush(true)&#10;        .build();&#10;clusterManager.insertBucket(bucketSettings);&#10;&#10;/**&#10;Bucket bucket = cluster.openBucket(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;);&#10;&#10;// Create a JSON Document&#10;JsonObject arthur = JsonObject.create()&#10;        .put(&quot;name&quot;, &quot;Arthur&quot;)&#10;        .put(&quot;email&quot;, &quot;kingarthur@couchbase.com&quot;)&#10;        .put(&quot;interests&quot;, JsonArray.from(&quot;Holy Grail&quot;, &quot;African Swallows&quot;));&#10;&#10;&#10;bucket.upsert(JsonDocument.create(&quot;00000000001&quot;, arthur));&#10;&#10;System.out.println(bucket.get(&quot;00000000001&quot;));&#10;&#10;bucket.bucketManager().createN1qlPrimaryIndex(true, false);&#10;&#10;N1qlQueryResult result = bucket.query(&#10;        N1qlQuery.parameterized(&quot;SELECT name FROM `bucketname` WHERE $1 IN interests&quot;,&#10;                JsonArray.from(&quot;African Swallows&quot;))&#10;);&#10;&#10;for (N1qlQueryRow row : result) {&#10;    System.out.println(row);&#10;}&#10;System.out.println(&quot;********************&quot;);&#10;**/&#10;&#10;//clusterManager.removeBucket(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Cluster cluster = CouchbaseCluster.create(context.couchbase_node);&#10;cluster.authenticate(context.couchbase_username, context.couchbase_password);&#10;ClusterManager clusterManager = cluster.clusterManager(context.couchbase_username, context.couchbase_password);&#10;BucketSettings bucketSettings = new DefaultBucketSettings.Builder()&#10;        .type(BucketType.COUCHBASE)&#10;        .name(context.couchbase_bucket)&#10;        .password(context.couchbase_password)&#10;        .quota(120) // megabytes 兆字节&#10;        .replicas(1)&#10;        .indexReplicas(true)&#10;        .enableFlush(true)&#10;        .build();&#10;&#10;String bucket_name = &quot;&quot;;&#10;try{&#10;    bucket_name = clusterManager.getBucket(context.couchbase_bucket).name();&#10;}catch (Exception e){&#10;    System.out.println(&quot;Has Exception&quot;);&#10;}&#10;&#10;if (bucket_name.equals(context.couchbase_bucket)){&#10;    System.out.println(context.couchbase_bucket + &quot; already exists, please use it !&quot;);&#10;}else {&#10;    clusterManager.insertBucket(bucketSettings);&#10;    Bucket bucket = cluster.openBucket(context.couchbase_bucket);&#10;&#10;&#9;// Perform a N1QL Query&#10;&#9;bucket.query(&#10;        N1qlQuery.parameterized(&quot;create primary index on `&quot;+context.couchbase_bucket+&quot;`;&quot;, JsonArray.from(&quot;African Swallows&quot;))&#10;&#9;);&#10;}&#10;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#10;import com.couchbase.client.java.*;&#10;import com.couchbase.client.java.bucket.BucketType;&#10;import com.couchbase.client.java.cluster.ClusterManager;&#10;import com.couchbase.client.java.cluster.BucketSettings;&#10;import com.couchbase.client.java.cluster.DefaultBucketSettings;&#10;import com.couchbase.client.java.document.*;&#10;import com.couchbase.client.java.document.json.*;&#10;import com.couchbase.client.java.query.*;&#10;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -819,14 +819,6 @@
       <column defaultValue="" key="false" length="1" name="differ" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="800">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Cluster cluster = CouchbaseCluster.create(context.couchbase_node);&#10;cluster.authenticate(context.couchbase_username, context.couchbase_password);&#10;ClusterManager clusterManager = cluster.clusterManager(context.couchbase_username, context.couchbase_password);&#10;/**&#10;BucketSettings bucketSettings = new DefaultBucketSettings.Builder()&#10;        .type(BucketType.COUCHBASE)&#10;        .name(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;)&#10;        .password(context.couchbase_password)&#10;        .quota(120) // megabytes 兆字节&#10;        .replicas(1)&#10;        .indexReplicas(true)&#10;        .enableFlush(true)&#10;        .build();&#10;clusterManager.insertBucket(bucketSettings);&#10;*/&#10;&#10;/**&#10;Bucket bucket = cluster.openBucket(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;);&#10;&#10;// Create a JSON Document&#10;JsonObject arthur = JsonObject.create()&#10;        .put(&quot;name&quot;, &quot;Arthur&quot;)&#10;        .put(&quot;email&quot;, &quot;kingarthur@couchbase.com&quot;)&#10;        .put(&quot;interests&quot;, JsonArray.from(&quot;Holy Grail&quot;, &quot;African Swallows&quot;));&#10;&#10;&#10;bucket.upsert(JsonDocument.create(&quot;00000000001&quot;, arthur));&#10;&#10;System.out.println(bucket.get(&quot;00000000001&quot;));&#10;&#10;bucket.bucketManager().createN1qlPrimaryIndex(true, false);&#10;&#10;N1qlQueryResult result = bucket.query(&#10;        N1qlQuery.parameterized(&quot;SELECT name FROM `bucketname` WHERE $1 IN interests&quot;,&#10;                JsonArray.from(&quot;African Swallows&quot;))&#10;);&#10;&#10;for (N1qlQueryRow row : result) {&#10;    System.out.println(row);&#10;}&#10;System.out.println(&quot;********************&quot;);&#10;*/&#10;&#10;clusterManager.removeBucket(&quot;TDI40639_tCouchbaseInput_Output_read_write_test_flat_bucket&quot;);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;&#10;import com.couchbase.client.java.*;&#10;import com.couchbase.client.java.bucket.BucketType;&#10;import com.couchbase.client.java.cluster.ClusterManager;&#10;import com.couchbase.client.java.cluster.BucketSettings;&#10;import com.couchbase.client.java.cluster.DefaultBucketSettings;&#10;import com.couchbase.client.java.document.*;&#10;import com.couchbase.client.java.document.json.*;&#10;import com.couchbase.client.java.query.*;&#10;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_2"/>
   </node>
   <node componentName="CouchbaseInput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CouchbaseInput_1"/>
@@ -1062,7 +1054,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFixedFlowInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="CouchbaseInput_1" offsetLabelX="0" offsetLabelY="0" source="CouchbaseInput_1" target="tLogRow_3">
@@ -1194,22 +1185,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CouchbaseInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f26e26f7-3971-4480-b9cc-dbcd14970e5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kaDJAN1/Df+jldpWACRJFsr2a/d4qoLo0YYbudzyY0pFs/bgbKijfaZDCq+FQAnf4VGxzkBRR1mt
-mwW+v/qMuQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5655db4d-a497-440c-9fc6-fb9ed6ff9d29"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7C3bqDNozwF1AaKjXEFkkeSBp8OLUZlYn1EU5rgRgSIAOfpafWgMDao7rFVtTCj0UHrjspw8vX0l
-5Q2edqAFsQ==</DigestValue></Reference></SignedInfo><SignatureValue>Op3MfNgkUQbagJ9rTGV5ug2dW4DqI0UHM/vNNDMAEIaG5n7tK48T3o/m3+Kj/rhzQACHBOIg8NiR
-63oXR4O8auLZvgS//a86RetFBFxC5DlHawswzRT/66hJKssMi7ffnXnJ63griBIN8kQ42zwdWIeD
-msljAnIZ7sE+lVHqERSGVH3cvdN7MatKSdPNjzu2wZdfCFWkq8I60ulJBT7hW7wMvrDNJKh459lB
-HP1ScZuYqdnq2z44BtUkceaYr5gifu7KIOa1Td5HpC9ZQq9DZwkwHO0VOpUegyHDOQRdE6MpBqQJ
-BEBE3rzZbErG55emHWeQqdyGvCfrxR/lMXA+WQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_181b2f02-83d5-4a3e-bac5-66f76f776634"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2k4tu1FY+93owKpeUkv0HLyEcMW9Bjnywt83UWXyd5jgLAHSqRDnaOGXYAgtHoJzkCheXXaQho/G
+eAzb2vtwzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce8c99c0-535e-4121-a8af-58b76b67662a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lafrwYLYQkm4IGsUmU08uoUV8M1VTTm1JPoR3GcqZRQ/Xsv5ZNvDYuOkZyLcbbDxtTckOgYa7UDo
+vtckcL8RJg==</DigestValue></Reference></SignedInfo><SignatureValue>pISS2DPU/jRo/Vpa4RsMXFls4dR7A0jngVn6to8k72lto0kdIuzNNd6gqtHdz9EvEwbLoeJ7Ar7V
+F+/AnfOboWKfFq3aryCVCJhndq690AKl+I1alvdxRSWG6I/4OPm1B+rfCRbBI3JRt/pIpQDV0SDP
+ZVSdvDFoQ82754zPjs1ABbINRlCMiVJeJ0iP0irAO09fG2z8UxLgzSL5TZUiePQoDJqgWpRA/g4r
+xNqbepntWcL2uWOr8FXPqk0n6rpu2uBf2ta/NE/zoFIv9j7XbFzNjtNb+hewYFl88wN6l33vFrQ8
+O/7KCy9bSsqIPVAWT99ZkvmM4ult7o0JLTzxQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1231,4 +1217,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5655db4d-a497-440c-9fc6-fb9ed6ff9d29" Target="#_f26e26f7-3971-4480-b9cc-dbcd14970e5f"><Timestamp>2019-09-20 07:47:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce8c99c0-535e-4121-a8af-58b76b67662a" Target="#_181b2f02-83d5-4a3e-bac5-66f76f776634"><Timestamp>2019-09-25 01:55:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

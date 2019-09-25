@@ -67,7 +67,7 @@
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"D:/talend-tools/builds/Talend-Studio-20190918_1938-V7.3.1SNAPSHOT/workspace/.metadata\"",
+        "value" : "\"D:/talend-tools/builds/Talend-Studio-20190923_1940-V7.3.1SNAPSHOT/workspace/.metadata\"",
         "contextMode" : false
       }, {
         "show" : true,
