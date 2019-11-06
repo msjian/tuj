@@ -67,7 +67,7 @@
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"D:/talend-tools/builds/Talend-Studio-20190923_1940-V7.3.1SNAPSHOT/workspace/.metadata\"",
+        "value" : "\"D:/talend-tools/builds/Talend-Studio-20191025_1940-V7.3.1SNAPSHOT/workspace/.metadata\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -180,7 +180,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "0RMsyjmybrE=",
+        "value" : "ENC:[3EKREKdZYLBkDTizpw7PgicjwYKRR/pAGeJhN/Hk]",
         "contextMode" : false
       }, {
         "show" : true,
@@ -376,7 +376,7 @@
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS_IMPLICIT_CONTEXT",
-        "value" : "0RMsyjmybrE=",
+        "value" : "ENC:[oKM2cC9iA0LBsfMIOHIBziY97CIEwKoh/EZC5UAb]",
         "contextMode" : false
       }, {
         "show" : true,
