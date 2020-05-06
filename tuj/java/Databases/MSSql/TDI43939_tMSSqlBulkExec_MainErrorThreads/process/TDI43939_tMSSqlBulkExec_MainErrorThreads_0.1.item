@@ -11,12 +11,12 @@
     <contextParameter comment="" name="result_username" prompt="new1?" promptNeeded="false" type="id_String" value="null"/>
     <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="&quot;default.txt&quot;"/>
     <contextParameter comment="" name="filesize" prompt="filesize?" promptNeeded="false" type="id_Long" value=""/>
-    <contextParameter comment="" name="mssql_host" prompt="mssql_host?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="mssql_port" prompt="mssql_port?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="mssql_schema" prompt="mssql_schema?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="mssql_database" prompt="mssql_database?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="mssql_username" prompt="mssql_username?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="mssql_password" prompt="mssql_password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_host" prompt="mssql2016_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_port" prompt="mssql2016_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_schema" prompt="mssql2016_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_database" prompt="mssql2016_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_username" prompt="mssql2016_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="mssql2016_password" prompt="mssql2016_password?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
@@ -566,13 +566,13 @@
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufDs46YJTtGz2TV/TEuU9Rt7+9RSnqiPCI="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -640,10 +640,10 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="FILE" name="BCP_UTILITY" value="&quot;bcp&quot;"/>
-    <elementParameter field="TEXT" name="SERVER" value="context.mssql_host"/>
+    <elementParameter field="TEXT" name="SERVER" value="context.mssql2016_host"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufDs46YJTtGz2TV/TEuU9Rt7+9RSnqiPCI="/>
     <elementParameter field="DBTABLE" name="TABLE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" show="false" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before bulk insert"/>
@@ -661,11 +661,13 @@
     <elementParameter field="CLOSED_LIST" name="DATA_FILE_TYPE" value="char"/>
     <elementParameter field="CHECK" name="FIRE_TRIGGERS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBBulkExec_2"/>
   </node>
   <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="992">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
@@ -1003,13 +1005,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_969ee46f-61c4-4d0c-9159-236b6c34d1f5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IPSsEQ6lkzWWySRVfzgMpNbshCUQ6gKr46Y2gCwlSu5DGP2bEob89nGrfzHku+SGzMC/sweXASB0
-ZlPpC73XPg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_db7632c8-24cd-4469-8848-1f481fcd6b03"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0OkGdipG0wnfEHNrJcXe1t4c1D8G2CJY4Er5cIZAlaBANJSqNFkuiMff2ANNpNtF+pEmQSC6WJTH
-1qcjadnj5Q==</DigestValue></Reference></SignedInfo><SignatureValue>UMeZTG7cRlwE2sgWRZJ7jHXov+zcEMOMpGFypdCICVSiYsMb/iQZsUE8zxXv8b5aQPUdntNoTqnH
-NNq+jZMGcxkBBgt389ej45PXqjCPVNb4m1bmWEtkC4rAjN6E0FefXx7Hjk0jkx9cRlz/u/3FkFZY
-m5DdGMyJF0fw7O4ENJjvHDUj8P2IaTR7VfZhLnsrVKaO/S3Cn4Oz25ik82H21xrk/4dfuo2n7ZnH
-3cKijD6UqAceyTGCGQXewJV+NwLMJoB0sQx4NzEe+NCIPknQqZ52f9LX7+cq1W1gt6Uj97qmFRLW
-DMef+Zw8Y+XHrZLfs2LcInRRRm5N/KrRbhYkXQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dcd8edb-de9f-4b78-9973-b25e72738cc0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zYVigL34XeBmmQrfLknHxqmplroCNIeA2OIZ+CAEbaefgYdsYLsFVYtldT/oqOLoVoTl7zVcJYMS
+zNR3Q7Bakw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ccdcedf7-d130-41b2-85c1-242fd56f3b81"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GbYRXpbGVr9mE4hAzy15HbYQtJAG1aBY2DBTp8pkLijwIq1nKAIBvX9USjSVI5nj97aAQV45UsBr
+CJTia2lWUw==</DigestValue></Reference></SignedInfo><SignatureValue>f199SFuEKuttQvtCn3bdu6OemV9YLbR3P2yebCUAEgqdF7Yyxu7Qd96c18/C3RWNjb8vT3zIcTi6
+MfrrxETofHBV1i0SKTP8PhR6AOwSNlHnqF5GX/c8Em1extL2PBxL3W+4gOUhtKmbDxqXLGwDLhB4
+2dn4Ssth+CKtdhBmmOJdGANcTCVV09f2MjsDT7MuDwhRO8lnbot0eRAoLGuVH6Qym97Ka4mfybKc
+uV3mfQxhwo5mWY/3NrimN+lBWXgUsIr0UmKu3wX7AuVjiZuw9/DsanIVhD5vlVZfK/w1hGAMPwhu
+YY4ix2h0qhlZDqgjOd1Te4h+DZV+3cVw9+DE0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1033,4 +1035,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_db7632c8-24cd-4469-8848-1f481fcd6b03" Target="#_969ee46f-61c4-4d0c-9159-236b6c34d1f5"><Timestamp>2020-04-23 13:10:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ccdcedf7-d130-41b2-85c1-242fd56f3b81" Target="#_1dcd8edb-de9f-4b78-9973-b25e72738cc0"><Timestamp>2020-05-06 14:07:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
