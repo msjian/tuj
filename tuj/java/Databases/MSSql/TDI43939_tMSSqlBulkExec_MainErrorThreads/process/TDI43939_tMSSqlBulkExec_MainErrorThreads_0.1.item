@@ -519,11 +519,11 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1248">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
-    <elementParameter field="FILE" name="FILENAME" show="false" value="context.mssql_dir+&quot;/&quot;+jobName+&quot;/out1.csv&quot;"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.data_output_dir+&quot;/&quot;+jobName"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_out1.csv&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="context.data_output_dir+&quot;/&quot;+jobName"/>
     <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Devx/Studio/7.0.1/Talend-Studio-20171123_V7.0.1_REF/Talend-Studio-20171123_0351-V7.0.1SNAPSHOT/workspace/delete_folder or delete_file&quot;"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
-    <elementParameter field="CHECK" name="FOLDER" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
     <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -547,7 +547,7 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before bulk insert"/>
     <elementParameter field="MEMO_SQL" name="QUERY" show="false" value="&quot;SELECT * FROM TABLE&quot;"/>
-    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;/out1.csv&quot;"/>
+    <elementParameter field="FILE" name="REMOTE_FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_out1.csv&quot;"/>
     <elementParameter field="FILE" name="OUTPUT_FILE_NAME" show="false" value="context.mssql_dir+&quot;/&quot;+jobName+&quot;/out1.csv&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="CLOSED_LIST" name="ACTION" value="INSERT"/>
@@ -615,7 +615,7 @@
   </node>
   <node componentName="tMSSqlOutputBulk" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutputBulk_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;/out1.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_out1.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
@@ -649,7 +649,7 @@
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before bulk insert"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM TABLE TDI43939&quot;+pid"/>
     <elementParameter field="FILE" name="REMOTE_FILENAME" show="false" value="&quot;C:/Talend/7_0_1_OfficialRelease/workspace/mssql_bulk.txt&quot;"/>
-    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;/mssql_bulk.csv&quot;"/>
+    <elementParameter field="FILE" name="OUTPUT_FILE_NAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_mssql_bulk.csv&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="CLOSED_LIST" name="ACTION" value="EXPORT"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
@@ -709,8 +709,8 @@
   <node componentName="tFileCompare" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCompare_1"/>
     <elementParameter field="CLOSED_LIST" name="COMPARISON_MODE" value="TEXT_CMP"/>
-    <elementParameter field="FILE" name="FILE" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;/mssql_bulk.csv&quot;"/>
-    <elementParameter field="FILE" name="FILE_REF" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;/out1.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_mssql_bulk.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE_REF" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_out1.csv&quot;"/>
     <elementParameter field="TEXT" name="DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files differ&quot;"/>
     <elementParameter field="TEXT" name="NO_DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files are identical&quot;"/>
     <elementParameter field="CHECK" name="PRINT" value="true"/>
@@ -741,6 +741,18 @@
       <column defaultValue="" key="false" length="1" name="differ" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="1376">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.data_output_dir+&quot;/&quot;+jobName+&quot;_mssql_bulk.csv&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Talend/7_0_1_OfficialRelease/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Talend/7_0_1_OfficialRelease/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_2"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -891,6 +903,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileExist_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_1" target="tFileDelete_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tDBBulkExec_1" target="tDBBulkExec_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
   </connection>
@@ -1005,13 +1020,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dcd8edb-de9f-4b78-9973-b25e72738cc0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zYVigL34XeBmmQrfLknHxqmplroCNIeA2OIZ+CAEbaefgYdsYLsFVYtldT/oqOLoVoTl7zVcJYMS
-zNR3Q7Bakw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ccdcedf7-d130-41b2-85c1-242fd56f3b81"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GbYRXpbGVr9mE4hAzy15HbYQtJAG1aBY2DBTp8pkLijwIq1nKAIBvX9USjSVI5nj97aAQV45UsBr
-CJTia2lWUw==</DigestValue></Reference></SignedInfo><SignatureValue>f199SFuEKuttQvtCn3bdu6OemV9YLbR3P2yebCUAEgqdF7Yyxu7Qd96c18/C3RWNjb8vT3zIcTi6
-MfrrxETofHBV1i0SKTP8PhR6AOwSNlHnqF5GX/c8Em1extL2PBxL3W+4gOUhtKmbDxqXLGwDLhB4
-2dn4Ssth+CKtdhBmmOJdGANcTCVV09f2MjsDT7MuDwhRO8lnbot0eRAoLGuVH6Qym97Ka4mfybKc
-uV3mfQxhwo5mWY/3NrimN+lBWXgUsIr0UmKu3wX7AuVjiZuw9/DsanIVhD5vlVZfK/w1hGAMPwhu
-YY4ix2h0qhlZDqgjOd1Te4h+DZV+3cVw9+DE0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ac992ac-c71c-416b-b836-fa1d5d465adf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IiGZj+6uc/MgvhjH09lld9JW2go+mYWWaI/2+Wu94iiRkJGvuJeTkbzstVgSgEms1NPPRj9Z89up
+xCpGV5wYdw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6172d4f8-a079-4f5a-91c9-3f7418485508"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EyJ4FCaegnyyLV8qrM7rzbHFbosbtkPTDLTKWkhoKHNPcGeBmhKBjeq/04r9u8/oRoc25cM8FwLU
+5t7rcYmHEw==</DigestValue></Reference></SignedInfo><SignatureValue>ttLQmDDtAiXyIKXX40N0zRf5qAQvgWwJjWfa3HVW3pF8IvOIkaqzs8vbOpKYUqLDwCbSvb5zYZKI
+gFrLyVi9WUSgsiFEc93LJsJtI8RcxYKu5iVHK51/BZk4Yx5aMIthIrFUuWZ2LK8SgTdbnEwqr5Qb
+2UGeerajbyv0BHIDFbIlUwH7XtZl5oCMd+DbojVXFieG9uk2JVd7B2KZIFE7wNJedy/fZbJAPc7q
+vmwwlaqNJM5i7h7SZqsZn3ElhoUEI+R/leX2Oqwm/klITkjHIfOus3Yz0M5+z2LLUnJb+z7/rCyH
+YGQGSHR84Tj1OPV00fpHkzaWUDWHFlEb3Q8vCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1035,4 +1055,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ccdcedf7-d130-41b2-85c1-242fd56f3b81" Target="#_1dcd8edb-de9f-4b78-9973-b25e72738cc0"><Timestamp>2020-05-06 14:07:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6172d4f8-a079-4f5a-91c9-3f7418485508" Target="#_5ac992ac-c71c-416b-b836-fa1d5d465adf"><Timestamp>2020-05-07 09:20:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
