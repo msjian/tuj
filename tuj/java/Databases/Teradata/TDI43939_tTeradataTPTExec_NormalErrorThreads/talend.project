@@ -194,6 +194,19 @@
       <relatedItems xmi:id="_r4p7mpBgEeqv4fc4CBb0YA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_r4p7m5BgEeqv4fc4CBb0YA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_cBE6sJBnEeqv4fc4CBb0YA">
+      <baseItem xmi:id="_cBE6sZBnEeqv4fc4CBb0YA" id="_cAlLcJBnEeqv4fc4CBb0YA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_cBE6spBnEeqv4fc4CBb0YA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6s5BnEeqv4fc4CBb0YA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6tJBnEeqv4fc4CBb0YA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6tZBnEeqv4fc4CBb0YA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6tpBnEeqv4fc4CBb0YA" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6t5BnEeqv4fc4CBb0YA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6uJBnEeqv4fc4CBb0YA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6uZBnEeqv4fc4CBb0YA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6upBnEeqv4fc4CBb0YA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_cBE6u5BnEeqv4fc4CBb0YA" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/DmytrosJob</deletedFolders>
     <migrationTask xmi:id="_0WzEMHgEEeqZY5uMCNfoHQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
     <migrationTask xmi:id="_0WzrQHgEEeqZY5uMCNfoHQ" id="org.talend.repository.model.migration.UpdateExistentMigrationTasksToAdaptNewMigrationSystemMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
