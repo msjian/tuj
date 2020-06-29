@@ -277,6 +277,23 @@
       <relatedItems xmi:id="_8CnCmpROEeqO_cRc7bImwg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_8CnCm5ROEeqO_cRc7bImwg" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_fDUdcKdBEeqsXozeJG4Wkg">
+      <baseItem xmi:id="_fDUdcadBEeqsXozeJG4Wkg" id="_x4NNELiMEeOPbb381fDhUg" version="0.1" type="job"/>
+      <relatedItems xmi:id="_fDUdcqdBEeqsXozeJG4Wkg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdc6dBEeqsXozeJG4Wkg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUddKdBEeqsXozeJG4Wkg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUddadBEeqsXozeJG4Wkg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUddqdBEeqsXozeJG4Wkg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdd6dBEeqsXozeJG4Wkg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdeKdBEeqsXozeJG4Wkg" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdeadBEeqsXozeJG4Wkg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdeqdBEeqsXozeJG4Wkg" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUde6dBEeqsXozeJG4Wkg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdfKdBEeqsXozeJG4Wkg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdfadBEeqsXozeJG4Wkg" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdfqdBEeqsXozeJG4Wkg" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_fDUdf6dBEeqsXozeJG4Wkg" id="DataQualityDependencies" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/DmytrosJob</deletedFolders>
     <migrationTask xmi:id="_0WzEMHgEEeqZY5uMCNfoHQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
     <migrationTask xmi:id="_0WzrQHgEEeqZY5uMCNfoHQ" id="org.talend.repository.model.migration.UpdateExistentMigrationTasksToAdaptNewMigrationSystemMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
