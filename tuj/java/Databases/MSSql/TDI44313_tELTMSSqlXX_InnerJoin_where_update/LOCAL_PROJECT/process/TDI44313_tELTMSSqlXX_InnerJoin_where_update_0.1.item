@@ -1,23 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns="http://www.talend.org/dbmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendDBMap="http://www.talend.org/dbmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="data_dir" prompt="data_dir?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="data_output_dir" prompt="data_output_dir?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="param_file_path" prompt="param_file_path?" promptNeeded="false" type="id_String" value="C:/private_work/tuj/tuj/full_context.csv"/>
-    <contextParameter comment="" name="result_database" prompt="result_database?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="result_host" prompt="result_host?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="result_password" prompt="result_password?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="result_port" prompt="result_port?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="result_table" prompt="result_table?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="result_username" prompt="result_username?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_database" prompt="mssql_database?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_datasource" prompt="mssql_datasource?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_host" prompt="mssql_host?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_password" prompt="mssql_password?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_port" prompt="mssql_port?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_schema" prompt="mssql_schema?" promptNeeded="false" type="id_String" value="null"/>
-    <contextParameter comment="" name="mssql_username" prompt="mssql_username?" promptNeeded="false" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0IM1WEeqsb6axpF1ldA" name="data_dir" prompt="data_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Ic1WEeqsb6axpF1ldA" name="data_output_dir" prompt="data_output_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Is1WEeqsb6axpF1ldA" name="param_file_path" prompt="param_file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/private_work/tuj/tuj/full_context.csv"/>
+    <contextParameter comment="" internalId="_uc-0I81WEeqsb6axpF1ldA" name="result_database" prompt="result_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0JM1WEeqsb6axpF1ldA" name="result_host" prompt="result_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Jc1WEeqsb6axpF1ldA" name="result_password" prompt="result_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Js1WEeqsb6axpF1ldA" name="result_port" prompt="result_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0J81WEeqsb6axpF1ldA" name="result_table" prompt="result_table?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0KM1WEeqsb6axpF1ldA" name="result_username" prompt="result_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Kc1WEeqsb6axpF1ldA" name="mssql2016_database" prompt="mssql2016_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Ks1WEeqsb6axpF1ldA" name="mssql2016_datasource" prompt="mssql2016_datasource?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0K81WEeqsb6axpF1ldA" name="mssql2016_host" prompt="mssql2016_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0LM1WEeqsb6axpF1ldA" name="mssql2016_password" prompt="mssql2016_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Lc1WEeqsb6axpF1ldA" name="mssql2016_port" prompt="mssql2016_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0Ls1WEeqsb6axpF1ldA" name="mssql2016_schema" prompt="mssql2016_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_uc-0L81WEeqsb6axpF1ldA" name="mssql2016_username" prompt="mssql2016_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null"/>
   </context>
   <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -44,6 +45,9 @@
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -56,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NRfQitQg8U67EKfSx3Tp3EFox9LqQcOinnje+WlT"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -71,7 +75,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/private_work/studio/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/private_work/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -91,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:T8GC0tylng4h4/kG3FpXgCN5+emdYde9azDO8+f/"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -281,7 +285,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.result_port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.result_database"/>
     <elementParameter field="TEXT" name="USER" value="context.result_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudRjTZXsKM8sZf3CpAM1Su5"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EMpHT6qASyAUKo6yi5GtU80Vc7IFLhd6tzjm5BvmWj52XEENtPd0GPLTV62MWy0nc9l1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.result_table"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -396,13 +400,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cTw9hZHdt0YMdcEKxNG40SJKJhi+ZdZm3zof84z086qcXB+UuLkwLaZhReGHCPcsz8p/lSlT"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -414,6 +418,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -433,13 +438,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jArOTbLwy4DsSgqoidJgNVbzCoVqsFMwj8OQHwsgmqPl83Vq+2cHp/GF/n2xzLD2iWGMzzwz"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -451,6 +456,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
     <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
@@ -490,13 +496,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wy1CigGguSGYonJOiDk4A9zM4rRJPhSn51s40mbvlZVPHAdtvZ1orZtKcUhEZByn7b4RZLtV"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TDI44313IN1&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -512,6 +518,9 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="1000"/>
@@ -579,13 +588,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yFSdmwSY1QuibiL3YEf30LUEDb2yWKQYn1NAXg53BeQSYz8E2NYDKANUkEcf9vuQMKb01pbo"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TDI44313IN2&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -601,6 +610,9 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
@@ -650,23 +662,24 @@
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Jm0Gqcz8f+SzZFzCTqBda3q/SjNyM5dQJjJX+Lm/gDEOiElKWfjNWHOqja+3mddE5/F16Q8R"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL"/>
     <elementParameter field="IMAGE" name="PREVIEW" value="_YEPlMKukEeqMVc8tur4Nag-tELTMSSqlMap_1-PREVIEW.bmp"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="TEXT" name="ACTIVE_DATABASE_DELIMITED_IDENTIFIERS" show="false" value="false"/>
     <metadata connector="TABLE" label="TDI44313IN2" name="table1">
       <column comment="" key="true" length="10" name="id" nullable="false" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="DBMapData">
+    <nodeData xsi:type="TalendDBMap:DBMapData">
       <InputTables alias="in1" joinType="NO_JOIN" name="in1" tableName="TDI44313IN1">
         <DBMapperTableEntries join="true" name="id"/>
         <DBMapperTableEntries name="name"/>
@@ -678,7 +691,7 @@
       <OutputTables name="table1" tableName="TDI44313IN2">
         <DBMapperTableEntries expression="in1.id" name="id"/>
         <DBMapperTableEntries expression="in1.name" name="name"/>
-        <FilterEntries expression="in2.id&gt;13" name="newFilter2"/>
+        <FilterEntries expression="in2.id&gt;13" filterKind="WHERE_FILTER" name="newFilter2"/>
       </OutputTables>
     </nodeData>
   </node>
@@ -725,14 +738,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql_schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.mssql2016_schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zsEqLTntXJFBM3Gq6EYPN084B6Dl5KxMnOfq5WEqmLBeOwCEx6u6kGWUlpixs9kZx5++/C74"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -744,6 +757,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -792,14 +806,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="DROP_IF_EXIST_CREATE"/>
     <elementParameter field="CHECK" name="CASESENSITIVE" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cP5wdZr88IzfaqKhNG9PbuWP9/Vxxz3vrErKaATwA1Q0BAczSholK7HpLNyx7FPjtMRh2d6l"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql2016_schema"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" show="false" value=""/>
     <elementParameter field="FILE" name="DBFILE_ACCESS" show="false" value="&quot;C:/private_work/studio/Talend-Studio-20190620_1446-V7.2.1/workspace/in.mdb&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DB_AS400_VERSION" show="false" value="jt400-9.8.jar"/>
@@ -854,6 +868,7 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" show="false" value="SET"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" show="false" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -875,14 +890,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="DROP_IF_EXIST_CREATE"/>
     <elementParameter field="CHECK" name="CASESENSITIVE" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="HOST" value="context.mssql_host"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.mssql_database"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mssql2016_host"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mssql2016_database"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="context.mssql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudfa1EelI9bxat5LFAAAZsZ"/>
-    <elementParameter field="TEXT" name="PORT" value="context.mssql_port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql_schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.mssql2016_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kiBiBLfAdyFiBzfU3p3oHDyF7hKkQ35AN1XjnFojOKyhHZ+zNu1wPB3iEbBQn9N8N5d2o7rT"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mssql2016_port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.mssql2016_schema"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" show="false" value=""/>
     <elementParameter field="FILE" name="DBFILE_ACCESS" show="false" value="&quot;C:/private_work/studio/Talend-Studio-20190620_1446-V7.2.1/workspace/in.mdb&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DB_AS400_VERSION" show="false" value="jt400-9.8.jar"/>
@@ -937,6 +952,7 @@
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" show="false" value="SET"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
     <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" show="false" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
@@ -1098,13 +1114,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e73a916a-ff86-4f45-aa34-3bd88adcf4dd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2Fh00OKdTAVYyIMWdM+yZtFQURmK2WGv4z8/WmdWPaFPhGOESNRoWN+Bh3diOwz15f4yno1U+zqH&#13;
-UiAB9jF66w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_26a6eb01-d425-4d54-a4a2-260c9ccc9dbb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fp24fhEJzR8VLkrNCkhGfBJpLdg216Xg2JVV29/fyffjAAYOWxZS+xIXBj9cps2CY1khDx8Te2ol&#13;
-79+wRapAHA==</DigestValue></Reference></SignedInfo><SignatureValue>PlS3TTxTGYiRjmcdJLIoCptXswrG9iRO8siKaFrvWxkMlhM+Ji6SdPGwLF4hXd3vq2lPnegbR1is&#13;
-soWvkY1G+ypvydEiizoUFSa4w0vKyDrmhILal3HTnVFzrJfCOmBT5iHDWE+jCIm+n7vRaPYEtzrD&#13;
-Mo89phjkb+kJ8hSw7OXVoleZChPqUpoO1jY59rVEFzAzxePzZv/8MPEMHskpA3FomFkYSSRKEz50&#13;
-slGfwIlB+YTgX17Cg3SHBgtKiyqu/V4enEsIIt4X+JotKWqQmIEzuIyHHpXTZAletdAhzWhL9ymY&#13;
-PSPHLOBr6jocsDWUCeoY/PQlJGsPFEk2t27ubA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f4b71169-6662-4e5b-b91a-f2214f6a1fbd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NvEYHrMYGEWPII/1njofV0TnWVvQ0miCTo5Gw0oGSGZZuJOjoQRRNiweu/HCKigWXJEYd27vjL2R&#13;
+jvzm/D1NqQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_435b6bc8-9eba-4130-800e-f596c028e9a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kT/OBqa/LSPuaszlTkwxBMi4jg4j2vD/KEJ2FzFMMw5wpW6gGwtpxPZxoZ4yxo7xLBVtl6m2Z3nu&#13;
+G9pkjXrMmQ==</DigestValue></Reference></SignedInfo><SignatureValue>RJ9V/ZS58/jAtEYI6kqGWWCq0QA/iTyxsjB3+8g4S9M4ZqX6Hqj8Jwtc2J211KEUqCpv8YtDb2Q1&#13;
+/u8wlVSbyqNHSzA8LHZVhHUW2liRpv8HTbbuNfuR/ttRmgvY+9SMCOL6jqnMiWBPNOoRX+BOlHkK&#13;
+26CJFGeFnEhqs+3lLC7I1uqXst/OW1LKLgWmdiAfL7BPlX9ymdOe0yLh3Os0qlCsTChuVsF6kKg8&#13;
+Ejz7JmJ/ohYwEfD59sNfwjI66aFsM4mKHEIkvz6msG9UnuSozTolQgbOi2GDE8m8XbbFPNURB2m6&#13;
+TyG1bV4x/Q+tfkgGNv3YIQlYa9JmvapoFV4iyQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1126,4 +1142,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_26a6eb01-d425-4d54-a4a2-260c9ccc9dbb" Target="#_e73a916a-ff86-4f45-aa34-3bd88adcf4dd"><Timestamp>2020-07-13 06:28:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_435b6bc8-9eba-4130-800e-f596c028e9a7" Target="#_f4b71169-6662-4e5b-b91a-f2214f6a1fbd"><Timestamp>2020-07-24 03:22:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
